@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+        Registrasi KTP Mahasiswa
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label position="floating">Nama</ion-label>
+            <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">NIK</ion-label>
+            <ion-input type="text" [(ngModel)]="nik"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Tempat Lahir</ion-label>
+            <ion-input type="text" [(ngModel)]="tempatLahir"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="">Tanggal Lahir</ion-label>
+            <ion-input type="date" [(ngModel)]="tanggalLahir"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Alamat</ion-label>
+            <ion-textarea [(ngModel)]="alamat"></ion-textarea>
+        </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" (click)="submitForm()">
+        Simpan Data Registrasi
+    </ion-button>
+
+    <ion-button expand="full" (click)="submitView()">
+        History
+    </ion-button>
+    
+    <div id="map">
+        <iframe
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border:0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7298272946355!2d<longitude>!3d<latitude>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41a6448bb97%3A0x8f260eaf1e4ab77!2sJalan%20Pantai%20Pandan%20Kec.%20Samarinda%20Ulu%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur%2075157!5e0!3m2!1sen!2sid!4v1623400737403!5m2!1sen!2sid"
+          allowfullscreen
+        ></iframe>
+      </div>
+  
+</ion-content>

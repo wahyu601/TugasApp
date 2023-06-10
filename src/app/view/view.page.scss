@@ -1,0 +1,25 @@
+ion-content {
+  ion-list {
+    ion-item {
+      ion-label {
+        font-weight: bold;
+      }
+      ion-text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  div {
+    margin-top: 20px;
+    ion-text {
+      text-align: center;
+      font-style: italic;
+      color: gray;
+    }
+  }
+
+  ion-button {
+    margin-top: 20px;
+  }
+}

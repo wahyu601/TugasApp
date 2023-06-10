@@ -6,16 +6,14 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { EmailComposer } from '@awesome-cordova-plugins/email-composer/ngx';
-EmailComposer;
+
+import { FormsModule } from '@angular/forms';
+import { LocationService } from './location.service';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    EmailComposer,
-  ],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
+  providers: [LocationService, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

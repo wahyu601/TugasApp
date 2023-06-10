@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> View Data KTP </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="ktpData">
+    <ion-item>
+      <ion-label>Nama:</ion-label>
+      <ion-text>{{ ktpData.nama }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>NIK:</ion-label>
+      <ion-text>{{ ktpData.nik }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tempat Lahir:</ion-label>
+      <ion-text>{{ ktpData.tempatLahir }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tanggal Lahir:</ion-label>
+      <ion-text>{{ ktpData.tanggalLahir }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Alamat:</ion-label>
+      <ion-text>{{ ktpData.alamat }}</ion-text>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="!ktpData">
+    <ion-text>Tidak ada data KTP yang tersimpan.</ion-text>
+  </div>
+
+  <ion-button expand="full" color="success" (click)="redirectToForm()">
+    Isi Data KTP
+  </ion-button>
+  <br />
+  <br />
+  <ion-button
+    fill="solid"
+    expand="full"
+    color="success"
+    (click)="getLocation()"
+  >
+    View Location
+  </ion-button>
+  <br />
+
+  <ion-button
+    fill="solid"
+    expand="full"
+    color="success"
+    (click)="sendToWhatssapp()"
+  >
+    Send to WhatsApp
+  </ion-button>
+  <br />
+
+  <ion-button
+    fill="solid"
+    expand="full"
+    color="success"
+    (click)="redirectToForm()"
+  >
+    Send to Telegram
+  </ion-button>
+  <br />
+
+  <ion-button
+    fill="solid"
+    expand="full"
+    color="success"
+    (click)="redirectToForm()"
+  >
+    Send to Email
+  </ion-button>
+</ion-content>
