@@ -1,0 +1,7 @@
+{
+  "name": "TugasApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
