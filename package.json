@@ -1,5 +1,5 @@
 {
-  "name": "waduh",
+  "name": "TugasApp",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
-    "@capacitor/android": "5.0.5",
+    "@capacitor/android": "5.0.4",
     "@capacitor/app": "5.0.3",
     "@capacitor/core": "5.0.5",
     "@capacitor/haptics": "5.0.4",
